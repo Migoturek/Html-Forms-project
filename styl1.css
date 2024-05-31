@@ -1,0 +1,199 @@
+html {
+	background-image: url('zdjecia/1.jpg');
+	font-family: verdana, tahoma, arial;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	color: black;
+	font-size: large;
+}
+
+body {
+	width: 988px;
+	background-color: rgba(50, 7, 55, 0.2);
+	margin: 10px auto 10px auto;
+	padding: 0;
+	padding-bottom: 10px;
+	border: 1px solid #000000;
+	background-size: 6480px 1500px;
+	background-image: url(images/allback.jpg);
+}
+
+#naglowek {
+	width: 988px;
+	height: 270px;
+	background-image: url('zdjecia/JGo.gif');
+	background-repeat: no-repeat, repeat;
+	margin: 0;
+	padding: 0;
+}
+
+#naglowek p {
+	font-weight: bold;
+	font-size: 80px;
+	padding-left: 20px;
+	margin: 0;
+	padding: 0;
+	padding-left: 70px;
+	padding-top: 45px;
+}
+
+form {
+	width: 988px;
+	height: 1480px;
+	margin: 33%;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+input {
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	background-color: lightgray;
+	border: none;
+}
+
+input:hover {
+	background-color: lightskyblue
+}
+
+select {
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: white;
+	background-color: lightgray;
+	border: none;
+}
+
+select:hover {
+	background-color: lightskyblue
+}
+
+textarea {
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: white;
+	background-color: lightgray;
+	border: none;
+	width: 45%;
+}
+
+textarea:hover {
+	background-color: lightskyblue
+}
+
+#navigation {
+	padding-top: 210px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	background-color: #E2E2E0;
+}
+
+a:link {
+	color: #32586F;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #32586F;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #eb422d;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #32586F;
+	text-decoration: none;
+}
+
+#container {
+	width: 98%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFFFFF;
+	padding: 10px;
+}
+
+#content {
+	padding: 10px;
+	float: right;
+	width: 60%;
+	background-image: url(zdjecia/mainback.jpg);
+	background-repeat: repeat-x;
+}
+
+#sidebar {
+	padding: 10px;
+	float: left;
+	width: 35.85%;
+	background-image: url(zdjecia/mainback.jpg);
+	background-repeat: repeat-x;
+}
+
+#bottom {
+	padding: 10px;
+	background-color: #FFFFFF;
+	background-image: url(zdjecia/mainback.jpg);
+	background-repeat: repeat-x;
+	height: 200px;
+	overflow: auto;
+	margin-bottom: 50px;
+}
+
+.clear {
+	clear: both;
+	background-color: #FFFFFF;
+}
+
+#top {
+	padding: 10px;
+	height: 20px;
+	background-image: url(zdjecia/topback.jpg);
+	font-size: x-small;
+}
+
+#header {
+	height: 242px;
+	background-image: url(zdjecia/top.jpg);
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	background-color: #E2E2E0;
+}
+
+.header2 {
+	color: #3A5D71;
+	text-align: center;
+}
+
+#content img {
+	float: left;
+	margin: 5px;
+	padding: 5px;
+	background-color: #32586F;
+}
+
+.button {
+	background-color: darkgray;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}

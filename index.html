@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+  <link rel="stylesheet" type="text/css" href="styl1.css" />
+
+  <style>
+    .tekst {
+      font-weight: bold;
+      margin-top: 30px;
+      position: absolute;
+      font-size: 5.5em;
+     
+    }
+  </style>
+
+</head>
+
+<script>
+
+  var leftpos = 0;
+  var timeout = 10;
+  var direction = 1; // 1 prawo 0 w lewo 
+
+  function newPosition() {
+    var tekst = document.getElementById('tekst');
+    if (direction == 1) {
+      if (leftpos < window.innerWidth - tekst.offsetWidth - 4) {
+        leftpos += 4;
+      } else {
+        leftpos -= 4;
+        direction = 0;
+      }
+    } else {
+      if (leftpos > 0) {
+        leftpos -= 4;
+      } else {
+        leftpos += 4;
+        direction = 1;
+      }
+    }
+
+    tekst.style.left = leftpos + 'px';
+    setTimeout(newPosition, timeout);
+  }
+
+  setTimeout(newPosition, timeout);
+
+</script>
+
+
+
+<body>
+  <div id="naglowek">
+    <span style="color: #b4005b" id="tekst" class="tekst">OFF ROAD</span>
+  </div>
+
+  <div id="container">
+    <div id="header">
+      <h1 class="header2">Strona Miłośników 4x4</h1>
+      <style>
+        #baner {
+          height: 360px;
+          width: 720px;
+        }
+
+        #fotka {
+          height: 360px;
+          width: 720px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      </style>
+      </head>
+
+      <body>
+
+        <div id="fotka">
+          <img src="obraz1.jpg" id="baner" alt="zdjecie">
+        </div>
+
+        <script>
+
+          window.onload = zmiana;
+          var nr = 0;
+
+          function zmiana() {
+            var obrazy = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg'];
+            nr++;
+
+            if (nr == obrazy.length) {
+              nr = 0;
+            }
+
+            document.getElementById('baner').src = obrazy[nr];
+
+            setTimeout(zmiana, 3000);
+          }
+
+        </script>
+
+
+    </div>
+    <div id="navigation">
+      <div id="invertedtabsline">&nbsp;</div>
+      <div id="invertedtabs">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="button"><a href="index.html">Home</a></button> <button class="button"><a
+            href="formularz.html">Formularz</a></button>
+      </div>
+
+      
+    </div>
+    <div id="content">
+      <p>Tajemniczy crossover Audi Czy to Audi Q4 Concept? Audi opublikowało kilka szkiców przedstawiających koncept,
+        który zostanie zaprezentowany na salonie samochodowym w Pekinie. Nie wiadomo, czy to Audi Q4 Concept Audi
+        opublikowało kilka szkiców przedstawiających koncept, który zostanie zaprezentowany na zbliżającym się salonie
+        samochodowym w Pekinie. Czy to Audi Q4 Concept? Na chwilę obecną nie mamy żadnych oficjalnych informacji od
+        producenta, ale wiele na to wskazuje. Samochód wygląda trochę jak offroadowe Audi TT. Widać, że to kolejny
+        koncept, który został zaprojektowany w zgodzie z językiem stylistycznym marki, który obrazował już wcześniejszy
+        trzydrzwiowy prototyp, pokazany na styczniowych targach w Detroit - Audi allroad shooting brake. Audil Q4,
+        wypełniające lukę pomiędzy niewielkim Q3 a rodzinnym Q5, byłoby rywalem dla takich aut, jak: BMW X4, Range Rover
+        Evoque czy Porsche Macan. Salon samochodowy w Pekinie potrwa od 20 do 29 kwietnia. Jest szansa, że Audi TT
+        otrzyma nowego, terenowego członka rodziny. Audi TT Offroad Concept to kolejny koncept, który został
+        zaprojektowany w zgodzie z językiem stylistycznym marki, który obrazował już wcześniejszy trzydrzwiowy prototyp,
+        pokazany na styczniowych targach w Detroit </p>
+      <p><img src="zdjecia/auditt.jpg" alt="" width="270" height="189" />TT zaczynało w drugiej połowie lat
+        dziewięćdziesiątych jako niewielkie coupe o długości tylko 404 centymetrów i doczekało się do dnia dzisiejszego
+        trzech generacji. Auto przez cały ten czas zachowało swoją unikalną tożsamość, która wydaje się teraz zagrożona.
+        Dlaczego? Odpowiedzią jest koncept kompaktowego SUV'a o nazwie TT Offroad.
+        Niemcy przygotowali wizję TT napompowanego do rozmiarów Q3 z myślą o salonie samochodowym w Pekinie, nazywając
+        Chiny swoim drugim, domowym rynkiem. Koncept rozciąga się na 439 centymetrów długości przy 263-centymetrowym
+        rozstawie osi, mierzy 185 centymetrów szerokości i 153 centymetry wysokości. TT Offroad jest hybrydą, która
+        według obowiązujących norm pomiarowych zużywa średnio tylko 1,9 litrów paliwa na sto kilometrów.
+
+      </p>
+      <p>&nbsp;</p>
+    </div>
+    <div id="sidebar">
+      <h2 class="header2">Nowy koncept Audi TT wygląda i jeździ jak SUV</h2>
+      <p>Nowe Audi TT zadebiutowało w marcu podczas Geneva Motor Show. W Pekinie został z kolei pokazany model TT
+        offroad concept, który być może jest zapowiedzią nowego crossovera.Samochód łączy w sobie "sportowe cechy coupé
+        oraz użyteczność kompaktowego SUV-a". Auto bazuje na platformie MQB. Nadwozie jest oparte na ramie Audi Space
+        Frame i zbudowane ze stali i aluminium.Audi TT offroad concept to hybryda typu plug-in. Crossover został
+        wyposażony w silnik 2,0 TFSI o mocy 292 KM i maksymalnym momencie obrotowym 380 Nm. Współpracuje on z dwoma
+        motorami elektrycznymi (po jednym na każdą oś), które razem generują 170 KM i 490 Nm.W trybie kombinowanym
+        pojazd dysponuje 408 KM i 650 Nm. Audi przyspiesza od 0 do 100 km/h w 5,2 s. Prędkość maksymalna została
+        elektronicznie ograniczona do 250 km/h. W trybie elektrycznym auto może się rozpędzić do 130 km/h. Zasięg w
+        trybie hybrydowym sięga 880 km. Podczas jazdy z użyciem wyłącznie prądu można pokonać do 50 km. Średnie spalanie
+        to 1,9 l/100 km, a emisja dwutlenku węgla do atmosfery 45 g/km.</p>
+      <p>&nbsp;</p>
+    </div>
+    <div class="clear" id="bottom">
+      <div>
+        <h2 class="header2">Specyfikacje Techniczne</h2>
+        <p>Napęd plug-in-hybrid Audi TT offroad concept generuje moc systemową 300 kW (408 KM) i systemowy moment
+          obrotowy 650 Audi TT offroad concept, Fot: AudiNm. Pojazd od 0 do 100 km/h przyspiesza w 5,2 sekundy, a jego
+          prędkość maksymalna, którą elektronicznie ograniczono, wynosi 250 km/h. Samochód zużywa średnio tylko 1,9 l
+          paliwa na 100 km i emituje zaledwie 45 g CO2 na kilometr. Audi TT offroad concept może przejechać na napędzie
+          elektrycznym ponad 50 km. Pokonuje zatem krótkie odcinki nie emitując w ogóle dwutlenku węgla. Łączny zasięg
+          auta wynosi do 880 km.Jako silnik spalinowy zastosowano tu jednostkę 2.0 TFSI, generującą moc 215 kW (292 KM)
+          i moment obrotowy 380 Nm. Dwulitrowy, czterocylindrowy silnik z dużą turbosprężarką kryje w sobie
+          spektakularne rozwiązania techniczne podnoszące jego efektywność. W zakresie obciążeń częściowych, dodatkowy
+          wtrysk pośredni, uzupełniający bezpośredni wtrysk benzyny, obniża zużycie paliwa. Kolektor wylotowy
+          zintegrowano z głowicą silnika, tak by stanowił bazę dla precyzyjnego zarządzania temperaturą. Poprzecznie
+          zamontowany silnik 2.0 TFSI, za pośrednictwem osobnego sprzęgła, łączy się z silnikiem elektrycznym,
+          generującym moc do 40 kW i moment obrotowy 220 Nm.Przed tylną osią zamontowano składający się z ośmiu modułów
+          akumulator litowo-jonowy, chłodzony cieczą. Taka pozycja montażowa akumulatora zapewnia wyrównany rozkład
+          ciężaru między przednią i tylną osią w stosunku 54 : 46 procenti pozwala nisko umieścić środek ciężkości
+          pojazdu.Swój zdecydowany charakter Audi TT offroad concept pokazuje zarówno podczas jazdy po różnych
+          nawierzchniach dróg, jak i w terenie. Po nawierzchni asfaltowej jedzie jak prawdziwy samochód sportowy, a
+          dzięki dużemu prześwitowi, krótkim zwisom i elektrycznemu napędowi e-tron quattro, z dużą sprawnością porusza
+          się w terenie. Opony mają rozmiar 255/40, a felgi średnicę 21 cali. Ich filigranowa forma z pięcioma ramionami
+          przywodzi na myśl modele Audi e-tron, a ciemne wykończenie elegancko kontrastuje z resztą.Koncepcyjne Audi TT
+          offroad concept posiada dwa systemy wsparcia kierowcy, które już wkrótce zostaną wprowadzone do produkcji
+          seryjnej – asystenta skrzyżowań i informację online o sygnalizacji świetlnej. Asystent skrzyżowań ma wspierać
+          kierowcę w unikaniu lub zmniejszaniu skutków kolizji bocznych u wylotów ulic i na skrzyżowaniach. Czujniki
+          radarowe i szerokokątna kamera monitorują strefę bezpośrednio przed autem i po jego bokach. Jeśli system
+          zarejestruje zbliżający sięz boku pojazd i oceni go jako potencjalne zagrożenie, zainicjuje kilkustopniowe
+          ostrzeżenie, przekazywane kierowcy za Audi TT offroad concept, Fot: Audipośrednictwem Audi virtual cockpit.
+          Online’owa usługa informacji o sygnalizacji świetlnej może z pomocą sieci telefonii komórkowej skomunikować
+          Audi TT offroad concept z centralnym komputerem zawiadującym miejską sygnalizacją świetlną. Na podstawie
+          pozyskiwanych z komputera centralnego informacji, Audi virtual cockpit sugeruje kierowcy prędkość z jaką
+          powinien jechać, by do następnego sygnalizatora dojechać na zielonym świetle. Podczas oczekiwania na zielone
+          światło, Audi virtual cockpit wyświetla bieżący czas oczekiwania.</p>
+        <p>Podobnie jak wiele nowych, seryjnych modeli marki Audi, TT offroad concept powstało na bazie koncepcji
+          wszechstronnej modułowej płyty podłogowej o budowie poprzecznej (MQB). Karoserię zbudowano wg. koncepcji ASF
+          (Audi Space Frame).Jej hybrydowa konstrukcja łączy elementy ze stali i aluminium. Konstrukcja, wraz z zespołem
+          akumulatorów napędu plug-in-hybrid sprawia, że ten kompaktowy crossover ma nisko położony środek ciężkości, co
+          pozytywnie wpływa na jego sportowe właściwości.Wymiary Audi TT offroad concept przedstawiają się następująco:
+          długość 4,39 m, szerokość 1,85 m i rozstaw osi 2,63 m. Podobne wymiary ma kompaktowy SUV - Audi Q3. TT offroad
+          concept jest jednak od Q3 o 8 cm niższe (ma 1,53 m wysokości), co już na pierwszy rzut oka podkreśla jego
+          sportowy charakter. Karoseria polakierowana na kolor żółty Sonora.Z przodu nowego Audi TT offroad concept
+          dominują linie poziome. Szeroka osłona chłodnicy Singleframe, ozdobiona logo Audi, jest plastycznie
+          zintegrowana z całą karoserią. Dwa delikatne przetłoczenia w dolnej strefie osłony nadają jej optycznej
+          lekkości. Wąskie pionowe pręty kratownicy tworzą strukturę typową dla modeli Audi e-tron. Duże wloty powietrza
+          umieszczone pod reflektorami diodowymi Matrix LED mają wyraziste, ostre krawędzie, a w ich wnętrzu także
+          znajdziemy pionowe pręty. Trzeci, wąski wlot powietrza tuż pod osłoną Singleframe łączy je w jedną całość.
+          Wewnątrz środkowego wlotu powietrza Audi TT offroad concept, Fot: Audizamontowano spojler zwiększający docisk
+          na przednią oś i poszerzający optycznie przód Audi TT offroad concept.Gdy spojrzymy na pojazd z boku, to
+          zauważymy, jak bardzo jest on spokrewnionyz Audi TT. Zwisy są krótkie, sportową linię nisko osadzonych okien
+          wyciągnięto ku górze. Stosunek wysokości do całości karoserii wynosi 30 : 70, a ich forma jest typowa dla
+          sportowego coupé. Kontur dachu wyraźnie opada ku tyłowi, a jego brzegi, na których delikatnie załamuje się
+          światło, nadają optycznej lekkości mocnym, bardzo płasko osadzonym słupkom C.Na drodze Audi TT offroad concept
+          prezentuje się pewnie i emanuje siłą. Szerokie wnęki kół tworzą jakby odrębne bryły geometryczne, mocno
+          akcentując wielkość potężnych kół.Z tyłu pojazdu atletycznie napięte powierzchnie ujęte są w poziome linie. W
+          wyraźnie zarysowanym zderzaku znajdują się dwie okrągłe końcówki rur wydechowych. Łączy je poprzeczny, wąski
+          spojler ozdobiony emblematem quattro, optycznie podkreślający szerokość auta.Wnętrze Audi TT offroad concept
+          oferuje miejsce czterem osobom. Dwie dorosłe osoby wygodnie zasiądą z tyłu. Smukłe sportowe fotele ze
+          zintegrowanymi zagłówkami gwarantują stabilną pozycję siedzących, a boki przednich siedzeń wyraźnie
+          zarysowano. Góra tablicy rozdzielczej ma formę skrzydła wspartego na poziomym, podkreślającym szerokosć
+          wnętrza pojazdu panelu, wykonanym z aluminium. Na nim umieszczono okrągłe nawiewy powietrza, przypominające
+          silniki lotnicze. Pośrodku nawiewów zamontowano obsługę klimatyzacji. Cała smukła tablica koncentruje się na
+          kierowcy.W konsoli środkowej i w drzwiach, obok elementów zapożyczonych z TT, znajdziemy wiele szczegółów
+          charakterystycznych dla rodziny Q, np. masywne wsparcie tunelu środkowego lub praktyczne uchwyty na
+          kubki.Większość systemów samochodu obsługiwanych jest za pomocą wielofunkcyjnej kierownicy lub terminalu MMI
+          umieszczonego na konsoli tunelu środkowego. Struktura menu systemu MMI podobna jest do struktury menu w
+          smartfonie. Wszystkie funkcje są łatwo dostępne. Za pomocą ruchów palcami na polu dotykowym terminalu,
+          kierowca może przewijać listy i mapy oraz dowolnie określać ich wielkość. Wszystkimi innymi funkcjami można
+          wygodnie sterować bez odrywania wzroku od drogi, używając wielofunkcyjnej kierownicy.Audi TT offroad concept,
+          Fot: AudiZastosowany w Audi TT offroad concept Audi virtual cockpit, jest nowoczesnym narzędziem zastępującym
+          tradycyjne wskaźniki. Jego wyświetlacz TFT, o przekątnej 12,3 cala, daje doskonałą jakość grafiki 3D.
+          Naciskając odpowiedni przycisk, kierowca może indywidualnie dopasować pojawiający się na nim obraz. W widoku
+          klasycznym elementem dominującym jest miernik mocy napędu plug-in-hybrid i prędkościomierz. W trybie
+          infotainment, na pierwszym planie ekranu jest mapa nawigacji lub informacja online o sygnalizacji świetlnej.
+          Audi virtual cockpit wyświetla także szczegółowe informacje o ładowaniu za pomocą Audi Wireless Charging.
+          Biegnąca od tablicy rozdzielczej aż do tyłu wnętrza konsola tunelu środkowego, ma kilka uchwytów na kubki i
+          szereg schowków. Jeden z nich to Audi phone box, pozwalający na konfigurację telefonu komórkowego kierowcy z
+          elektroniką pokładową, a także, w razie potrzeby, na indukcyjne doładowanie aparatu.W bagażniku znajduje się
+          zindywidualizowany schowek. Znajdziemy w nim zdalnie sterowany model (RC Car) w skali 1 : 8, z wiernie
+          zachowanymi proporcjami. Obok umieszczono baterie i narzędzia. Oparcia pojedynczych siedzeń tylnych są
+          elektrycznie składane. Po ich złożeniu uzyskamy prawie płaską powierzchnię bagażową. Zgodnie ze sportowym
+          charakterem koncepcyjnego samochodu, wnętrze wykonano z delikatnych materiałów w kombinacji jasnej i ciemnej
+          szarości. Na kole kierownicy, u góry tablicy rozdzielczej i na brzegach obudowy drzwi położono granitowo szarą
+          skórę Feinnappa. Podsufitkę, osłony słupków, obudowę drzwi i tunel środkowy obito dopasowaną do całości
+          tkaniną Alcantara. Podłokietniki w drzwiach, konsola tunelu środkowego i siedzenia, ozdobione szwami w
+          kształcie rombów, mają obicia w kolorze szarej skały z miękkiej, luksusowej skóry wytwarzanej przez włoską
+          manufakturę Poltrona Frau.</p>
+
+          <style>
+            div.gallery {
+              margin: 5px;
+             
+              float: left;
+              width: 100%;
+            }
+            
+            div.gallery:hover {
+              border: 1px solid #777;
+            }
+            
+            div.gallery img {
+              width: 100%;
+            
+            }
+            
+            div.desc {
+              
+              text-align: center;
+            }
+            </style>
+                
+              </div>
+            </div>
+                  
+                  
+                  
+                 
+                 
+                 <div class="gallery">
+              <a target="_blank" href="https://www.audi.com/en/experience-audi/models-and-technology/production-models/tt.html">
+                <img src="11.jpg">
+              </a>
+              <div class="desc"><p>Rewelacyjny Środek</p></div>
+            </div>
+            
+            <div class="gallery">
+              <a target="_blank" href="https://www.audi.com/en/experience-audi/models-and-technology/production-models/tt.html">
+                <img src="22.jpg" >
+              </a>
+              <div class="desc"><p>Zabujczo piękny za zwenątrz</p></div>
+            </div>
+            
+            <div class="gallery">
+              <a target="_blank" href="https://www.audi.com/en/experience-audi/models-and-technology/production-models/tt.html">
+                <img src="33.jpg">
+              </a>
+              <div class="desc"><p>Swietny mocny silnik</p></div>
+            </div>
+      
+      
+      
+      
+
+
+        <p>&nbsp;</p>
+      </div>
+      </div>
+
+
+     
+
+   
+</body>
+
+</html>

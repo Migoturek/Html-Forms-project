@@ -1,0 +1,92 @@
+html {
+	background-image: url('zdjecia/1.jpg');
+	font-family: verdana, tahoma, arial;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	color: white;
+	font-size: large;
+}
+
+body {
+	width: 988px;
+	background-color: rgba(50, 7, 55, 0.2);
+	margin: 10px auto 10px auto;
+	padding: 0;
+	padding-bottom: 10px;
+	border: 1px solid #000000;
+	background-size: 6480px 1500px;
+}
+
+#naglowek {
+	width: 988px;
+	height: 270px;
+	background-image: url('zdjecia/JGo.gif');
+	background-repeat: no-repeat, repeat;
+	margin: 0;
+	padding: 0;
+	}
+
+#naglowek p {
+	font-weight: bold;
+	font-size: 80px;
+	padding-left: 20px;
+	margin: 0;
+	padding: 0;
+	padding-left: 70px;
+	padding-top: 45px;
+}
+
+form {
+	width: 988px;
+	height: 1480px;
+	margin: 33%;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+input {
+	
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	background-color:lightgray;
+	border: none;
+
+	
+  }
+  
+  input:hover {background-color: lightskyblue}
+  
+  select {
+	
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color:white;
+	background-color:lightgray;
+	border: none;
+
+	
+  }
+  
+  select:hover {background-color: lightskyblue}
+  
+  textarea {
+	
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: white;
+	background-color:lightgray;
+	border: none;
+	width: 45%;
+
+	
+  }
+  
+  textarea:hover {background-color: lightskyblue}

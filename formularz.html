@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+  <div id="naglowek">
+    <p><span style="color: #b4005b">OFF ROAD</span></p>
+  </div>
+
+
+
+
+
+
+  <form id="zdj" action="mailto:michal.fila@onet.pl">
+    <div>
+
+
+
+      <TABLE>
+        <TR>
+          <TD> Imię: </TD>
+          <TD><input type="text" name="imie"></TD>
+        </TR>
+        <TR>
+          <TD> Nazwisko: </TD>
+          <TD><input type="text" name="nazwisko"></TD>
+        </TR>
+        <TR>
+        <TR>
+          <TD> Telefon: </TD>
+          <TD><input type="text" telefon="telefon"></TD>
+        </TR>
+        <TD> Płeć: </TD>
+        <TD>
+          <select name="Płeć">
+            <option selected>
+            <option>Mężczyzna
+            <option> Kobieta
+          </select></TD>
+        </TR>
+
+        <TR>
+          <TD> Miejsce OFF ROADU: </TD>
+          <TD> Polska <input type="radio" value="1" name="Miejsce"> Ukraina <input type="radio" value="1"
+              name="Miejsce"> Sachara <input type="radio" value="1" name="Miejsce">
+
+            Syberia <input type="radio" value="2" name="Miejsce"></TD>
+        </TR>
+
+        <TR>
+          <TD> Typ AUTA: </TD>
+          <TD> Terenowy <input type="radio" value="1" name="auto"> Suv <input type="radio" value="1" auto="auto">
+
+            Pick-Up <input type="radio" value="2" name="auto"></TD>
+        </TR>
+
+
+        <TR>
+          <TD> Liga Rajdowa:</TD>
+          <TD> pierwsza <input type="radio" value="1" name="Liga">
+            druga <input type="radio" value="2" name="Liga"></TD>
+        </TR>
+
+      </TABLE>
+
+
+
+
+
+
+
+
+
+      <p>Jakim jeździsz samochodem</p>
+      <input type="checkbox" >Suzuki<br>
+      <input type="checkbox">Nissan<br>
+      <input type="checkbox">Toyota<br>
+      <input type="checkbox">Opel<br>
+      <input type="checkbox">JEEP<br>
+      <input type="checkbox">Inny<br>
+      <input type="checkbox">Brak Pojazdu<br>
+      <br> <br>
+      <TR>
+        <TD> Podaj Dokładny Model: </TD>
+        <TD><input type="text" model="model"></TD>
+      </TR>
+      <br> <br>
+      <TR>
+        <TD>Podaj Przebieg: </TD>
+        <TD><input type="text" model="Przebieg"></TD>
+      </TR><br><br>
+      <TR>
+        <TD> Podaj Pojemność silnika: </TD>
+        <TD><input type="text" model="poj"></TD>
+      </TR>
+
+      <br><br>
+
+      <TD> Czy masz Prawo Jazdy: </TD>
+      <TD>
+        <select name="prawoJ">
+          <option selected>
+          <option>Tak
+          <option> Nie
+        </select></TD>
+
+      <p>Od kiedy je masz</p>
+      <input type="radio" name="Wiek">mniej niż 1 rok<br>
+      <input type="radio" name="Wiek">więcej niż 1 rok<br>
+      <input type="radio" name="Wiek">5 lat<br>
+      <input type="radio" name="Wiek">10 lat<br>
+      <input type="radio" name="Wiek">więcej niż 10 lat<br>
+
+
+
+      <br>
+      <TD> Czy posiadasz zniżkę związakową na ubezpieczenie: </TD>
+      <TD>
+        <select name="ubezpieczenie">
+          <option selected>
+          <option>Tak
+          <option> Nie
+        </select></TD>
+      </TR>
+
+      <p>Ile auto ma lat?</p>
+      <input type="radio" name="Wiek">mniej niż 10<br>
+      <input type="radio" name="Wiek">10-14<br>
+      <input type="radio" name="Wiek">14-17<br>
+      <input type="radio" name="Wiek">18-22<br>
+      <input type="radio" name="Wiek">22-30<br>
+      <input type="radio" name="Wiek">więcej niż 30
+
+
+
+      <p>Gdzie kupujesz części?</p>
+      <select name="części">
+        <option selected>Allegro</option>
+        <option>Olx</option>
+        <option>Oto Moto</option>
+
+      </select>
+
+
+
+      <input list="części">
+
+      <datalist id="części">
+        <option value="Allegro">
+        <option value="Olx">
+        <option value="off road parts">
+        <option value="suzuki.pl">
+        <option value="autofix.pl">
+        <option value="patrolParts4me.com">
+        <option value="LandCruserParts.com">
+        <option value="off road parts">
+        <option value="suzuki.pl">
+        <option value="Inna"></option>
+      </datalist>
+
+
+
+
+      <p>Opowiedz coś o sobie i modyfikacjach twojego pojazu</p>
+      <textarea name="Komentarz" cols="50" rows="10">Witam...</textarea>
+      <br><br>
+
+
+      <p>Twoje zdjęcie Auta</p>
+      <input type="file" name="Wybierz Plik" id="fileToUpload">
+      
+      <br><br><br>
+
+      <label for="mail">Podaj adres e-mail: </label> <input name="mail" id="mail" type="text" />
+      <br><br><br>
+      <input type="checkbox" id="dane_osobowe" name="dane_osobowe" value="Dane">
+      <label for="dane_osobowe">zgadzam się na przetwarzanie moich danych osobowych</label><br><br>
+
+
+      <input type="submit" value="Wyślij formularz">
+
+      <input type="reset" value="Wyczyść dane">
+    </div>
+    
+  </form>
+
+
+
+
+</body>
+
+</html>
